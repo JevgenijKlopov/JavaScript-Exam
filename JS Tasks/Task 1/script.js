@@ -8,3 +8,13 @@ pamatyti jo pateikto svorio kovertavimą į:
 Pastaba: rezultatas turi būti matomas pateikus formą ir atvaizduojamas
 <div id="output"></div> viduje. Gautus atsakymus stilizuokite naudojant CSS;
 ------------------------------------------------------------------- */
+const formEl = document.querySelector("form");
+const kiloInput = document.querySelector("#search");
+const result = document.querySelector("#output");
+formEl.addEventListener("submit", (e) => {
+    e.preventDefault()
+    const lb = kiloInput.value * 2.2046;
+    const g = kiloInput.value / 0.001;
+    const oz = kiloInput.value * 35.274;
+    result.innerHTML = `<p>lb: <span>${lb}</span></p><p>g: <span>${g}</span></p><p>oz: <span>${oz}</span></p>`
+})
