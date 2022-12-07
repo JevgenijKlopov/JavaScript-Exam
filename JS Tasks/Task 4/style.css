@@ -27,3 +27,26 @@
   margin-top: 50px;
   color: #333;
 }
+.card{
+  width: 350px;
+  border: 2px solid gray;
+  padding: 5px;
+  line-height: 30px;
+  background-color: rgb(200, 241, 228);
+}
+#output {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 10px;
+}
+span:nth-child(2n){
+  color: rgb(161, 105, 105);
+}
+span{
+  padding-right: 3px;
+}
+.card > h1 {
+  padding-bottom: 15px;
+  color: rgb(198, 132, 126);
+}
